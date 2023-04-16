@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+	<title>Phone Book</title>
+</head>
+<body class="bg-body-secondary">
+    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+	<h2 class="text-primary-emphasis">Add Contact</h2>
+	<form>
+		<label class="btn btn-secondary" for="firstName">First Name:</label>
+		<input class="btn btn-outline-secondary" type="text" id="firstName" name="firstName" required>
+		<label class="btn btn-secondary"  for="lastName">Last Name:</label>
+		<input class="btn btn-outline-secondary" type="text" id="lastName" name="lastName" required>
+		<label class="btn btn-secondary"  for="phoneNumber">Phone Number:</label>
+		<input class="btn btn-outline-secondary" type="text" id="phoneNumber" name="phoneNumber" required>
+		<input type="button" class="btn btn-dark" value="Save" onclick="saveContact()">
+	</form>
+	<br><br>
+	<h2 class="text-primary-emphasis">Contact List</h2>
+	<table id="contactTable" class="table table-bordered border-secondary">
+		<thead class="table-dark">
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Phone Number</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody >
+
+		</tbody>
+	</table>
+</div>
+	<script src="jscript.js"></script>
+</body>
+</html>
